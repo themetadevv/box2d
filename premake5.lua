@@ -1,23 +1,23 @@
 project "box2d"
 	kind "StaticLib"
 	language "C++"
-  cppdialect "C++20"
+  	cppdialect "C++20"
 	staticruntime "off" 
-  systemversion "latest"
+  	systemversion "latest"
 
 	targetdir ("bin/box2d/builds/%{cfg.system}_%{cfg.buildcfg}")
 	objdir ("bin/box2d/intermediates/%{cfg.system}")
 
 	includedirs
-  {
-      "src/include"
-  }
+  	{
+      "include"
+  	}
 
 	files
 	{
 	    "include/**.h",
 	    "src/**.h",
-      "src/**.c"
+      	"src/**.c"
 	}
 
 	filter "configurations:Debug"
