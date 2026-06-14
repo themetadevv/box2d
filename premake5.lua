@@ -1,7 +1,7 @@
 project "box2d"
 	kind "StaticLib"
 	language "C"
-  	cppdialect "C17"
+  	cdialect "C17"
 	staticruntime "off" 
   	systemversion "latest"
 
